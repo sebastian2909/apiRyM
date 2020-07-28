@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-image: url(img/fondo.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #container {
+        text-align: center;
+        width: 65%;
+        margin: 0px auto;
+        margin-top: 30px;
+        padding: 30px;
+        background: white;
+      }
+      form{
+        text-align: center;
+      }
+    </style>
+    <title>Rick & Morty</title>
+  </head>
+  <body>
+    <div id="container">
+      <img src="img/logo.png" width="25%" />
+      <hr />
+      <form id="formulario">
+        <div class="row">
+          <div class="form-group col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <input type="submit" class="btn btn-success" value="Consultar" />
+          </div>
+        </div>
+      </form>
+      <hr />
+      <div id="datos"></div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
